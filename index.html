@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonas_fa#dev</title>
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="stylet.css">
 </head>
+
 <body>
-    <h1>Olha, povo</h1>
-    <p>Boa noite</p>
+
+    <div class="circle">
+
+    </div>
+
+
+    <div class="logo">
+        <img src="Img/logo-starbucks.png" alt="logo-starbucks">
+    </div>
+
+    <div class="content">
+
+
+
+        <div class="text">
+            <h2>Não é só café <br>é <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto blanditiis quia cupiditate
+                aliquid
+                deserunt enim. Possimus cum cupiditate eveniet magnam fugiat aliquid voluptate facilis beatae excepturi
+                inventore. Facilis, repellat?</p>
+            <button type="button">Cadastre-se</button>
+        </div>
+
+        <div class="bigi">
+            <img src="./Img/thumb1.png" alt="imagem" class="starbucks">
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <div class="small">
+            <img src="./Img/img1.png" alt="imagem1" onclick="trocaImagem('./Img/thumb1.png')">
+            <img src="./Img/img2.png" alt="imagem2" onclick="trocaImagem('./Img/thumb2.png')">
+            <img src="./Img/img3.png" alt="imagem3" onclick="trocaImagem('./Img/thumb3.png')">
+            <img src="./Img/img4.png" alt="imagem4" onclick="trocaImagem('./Img/thumb4.png')">
+            <img src="./Img/img5.png" alt="imagem5" onclick="trocaImagem('./Img/thumb5.png')">
+        </div>
+    </div>
+
 </body>
+
+<script>
+
+    let imagem = document.querySelector(".starbucks")
+
+    function trocaImagem(endereco){
+        imagem.src = endereco
+        
+    }
+
+
+
+
+</script>
+
 </html>
